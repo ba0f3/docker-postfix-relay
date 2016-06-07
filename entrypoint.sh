@@ -17,7 +17,7 @@ export NETWORKS=${NETWORKS:-"192.168.0.0/16 172.16.0.0/12 10.0.0.0/8"}
 echo $HOSTNAME > /etc/mailname
 
 /usr/bin/envsubst < /main.cf.stub > /etc/postfix/main.cf
-rm /main/cf.stub
+rm /main.cf.stub
 rm -f $PID
 
 postfix start
