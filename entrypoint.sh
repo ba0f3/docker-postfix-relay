@@ -1,6 +1,6 @@
 #!/bin/ash
 
-DOLLAR='$'
+export OLLAR='$'
 PID=/var/spool/postfix/pid/master.pid
 
 if [ "$EXT_RELAY_PORT" != "" ]; then
